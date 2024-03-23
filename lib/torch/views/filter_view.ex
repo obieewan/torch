@@ -3,7 +3,10 @@ defmodule Torch.FilterView do
   Provides input generators for Torch's filter sidebar.
   """
 
-  use Phoenix.HTML
+  import Phoenix.HTML
+    import Phoenix.HTML.Form
+    use PhoenixHTMLHelpers
+
 
   import Torch.I18n, only: [message: 1]
 

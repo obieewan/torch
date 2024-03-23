@@ -1,6 +1,8 @@
 defmodule Torch.PaginationView do
   use Phoenix.Component
-  use Phoenix.HTML
+  import Phoenix.HTML
+    import Phoenix.HTML.Form
+    use PhoenixHTMLHelpers
 
   import Torch.I18n, only: [message: 1]
   alias Torch.TableView

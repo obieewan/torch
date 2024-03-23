@@ -4,7 +4,9 @@ defmodule Torch.TableView do
   """
 
   import Phoenix.HTML
-  import Phoenix.HTML.Link
+    import Phoenix.HTML.Form
+    use PhoenixHTMLHelpers
+  #import Phoenix.HTML.Link
 
   @doc """
   Generates a sortable link for a table heading.
